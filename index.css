@@ -32,7 +32,7 @@
 }
 
 #carousel {
-  position: relative;
+  position: static;
   margin-bottom: 10px
 }
 
