@@ -49,4 +49,8 @@ function reproducirAudio(evento)
     audio1.pause();
     audio3.play();
   }
+  if(evento.keyCode == teclas.C)
+  {
+    enlace();
+  }
 }
