@@ -1,3 +1,7 @@
+h2 {
+  color: #1e0c73;
+}
+
 #audio1-accesible {
   width: 100px;
   height: 10px;
@@ -20,9 +24,23 @@
   margin-left: 0;
   margin-top: 0;
 }
+.navbar-light .navbar-nav.active>.nav-link.show, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: #ff6b00;
+}
+.navbar-light .navbar-nav .nav-link:focus-within, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0,0,0,.7);
+  outline: 3px solid #ff6b00;
+}
+:focus {
+  outline: 3px solid #ff6b00;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: #1e0c73;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff6b00;
 }
 
 #main .carousel-inner img {
@@ -69,10 +87,8 @@
   padding: 40px;;
 }
 #atencion_pcd audio{
-  display: flex;
   text-align: center;
-
-
 }
+
 
 
