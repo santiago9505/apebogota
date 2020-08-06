@@ -32,10 +32,13 @@ function reproducirAudio(evento)
   if(evento.keyCode == teclas.SPACE)
   {
     audio1.play();
+    audio2.pause();
+    audio3.pause();
   }
   if(evento.keyCode == teclas.ESC)
   {
     audio1.pause();
+    audio3.pause();
     audio2.play();  
   }
   if(evento.keyCode == teclas.CTRL)
@@ -47,6 +50,7 @@ function reproducirAudio(evento)
   if(evento.keyCode == teclas.BORRAR)
   {
     audio1.pause();
+    audio2.pause();
     audio3.play();
   }
   if(evento.keyCode == teclas.C)
