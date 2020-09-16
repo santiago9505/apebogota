@@ -23,7 +23,7 @@ var teclas = {
   SPACE: 32,
   CTRL: 17,
   BORRAR: 8,
-  F: 70,
+  F: 70
 };
 
 document.addEventListener("keyup", reproducirAudio);

@@ -86,9 +86,27 @@ h2 {
   margin-top: 20px;
   padding: 40px;;
 }
-#atencion_pcd audio{
+#atencion_pcd audio {
   text-align: center;
 }
 
+#carousel-empresas {
+  margin-left: 50px;
+  position: static;
+  margin-bottom: 10px
+}
+
+.carousel-control-prev-icon{
+  background-image: url(images/flecha.PNG);
+  width: 60px;
+  height: 50px;
+  margin-left: 40px;
+}
+.carousel-control-next-icon {
+  background-image: url(images/flecha.PNG);
+  width: 60px;
+  height: 50px;
+  margin-right: 10px;
+}
 
 
