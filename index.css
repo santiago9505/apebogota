@@ -35,6 +35,10 @@ h2 {
   outline: 3px solid #ff6b00;
 }
 
+.col-md-6 {
+  margin-bottom: 2rem;
+}
+
 .navbar-light .navbar-nav .nav-link {
   color: #1e0c73;
 }
