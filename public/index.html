@@ -667,5 +667,29 @@
     <script src="index.js">
 
     </script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCX5xoN628uhDrOvZQKCuonpWadQY42U1k",
+    authDomain: "apebogota.com",
+    databaseURL: "https://apebogota.com",
+    projectId: "ape-bogota",
+    storageBucket: "ape-bogota.appspot.com",
+    messagingSenderId: "594802791415",
+    appId: "1:594802791415:web:7c2b6509b19a937a6c54f2",
+    measurementId: "G-M74FPG7DZX"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
