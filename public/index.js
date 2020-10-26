@@ -89,6 +89,7 @@ var audio1 = document.getElementById("audio1-accesible");
 var audio2 = document.getElementById("audio2-accesible");
 var audio3 = document.getElementById("audio3-accesible");
 var audio4 = document.getElementById("audio-emprendimiento");
+var audio5 = document.getElementById("audio5-accesible");
 
 
 
@@ -104,6 +105,7 @@ var teclas = {
   CTRL: 17,
   BORRAR: 8,
   E: 69,
+  O: 79,
   F: 70
 };
 
@@ -117,13 +119,23 @@ function reproducirAudio(evento)
     audio2.pause();
     audio3.pause();
     audio4.pause();
+    audio5.pause();
   }
   if(evento.keyCode == teclas.BORRAR)
+  {
+    audio1.pause();
+    audio2.play();
+    audio3.pause();
+    audio4.pause();
+    audio5.pause();
+  }
+  if(evento.keyCode == teclas.ESC)
   {
     audio1.pause();
     audio2.pause();
     audio3.play();
     audio4.pause();
+    audio5.pause();
   }
   if(evento.keyCode == teclas.E)
   {
@@ -131,20 +143,24 @@ function reproducirAudio(evento)
     audio2.pause();
     audio3.pause();
     audio4.play();
+    audio5.pause();
   }
-  if(evento.keyCode == teclas.ESC)
+  if(evento.keyCode == teclas.O)
   {
     audio1.pause();
+    audio2.pause();
     audio3.pause();
-    audio2.play();  
     audio4.pause();
+    audio5.play();
   }
+  
   if(evento.keyCode == teclas.CTRL)
   {
     audio1.pause();
     audio2.pause();
     audio3.pause();
     audio4.pause();
+    audio5.pause();
   }
  
   if(evento.keyCode == teclas.C)
