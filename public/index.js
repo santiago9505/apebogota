@@ -93,11 +93,6 @@ var audio5 = document.getElementById("audio5-accesible");
 
 
 
-
-  
-
-
-
 var teclas = {
   ESC: 27,
   C: 67,
