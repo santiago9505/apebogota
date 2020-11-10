@@ -9,12 +9,15 @@ $(function () {
 })
 
 
+const boton = document.getElementById('boton-contactanos');
+boton.addEventListener('click', enlace);
 
-
-function enlace()
-{
+function enlace() {
   location.href = "https://forms.office.com/Pages/ResponsePage.aspx?id=gcPCyy4vk02R0VBskxas5_uaYzbSud1LmU6-S958qnFUMVZEQ0paT0JLVzFGOE5JNEJYVzNEWDQyUS4u"
 }
+
+const otras_vacantes = document.getElementById('otras-vacantes');
+otras_vacantes.addEventListener('click', vacantes);
 
 function vacantes()
 {
