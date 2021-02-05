@@ -1,27 +1,25 @@
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-
-
-const boton = document.getElementById('boton-contactanos');
-boton.addEventListener('click', enlace);
+const boton = document.getElementById("boton-contactanos");
+boton.addEventListener("click", enlace);
 
 function enlace() {
-  location.href = "https://forms.office.com/Pages/ResponsePage.aspx?id=gcPCyy4vk02R0VBskxas5_uaYzbSud1LmU6-S958qnFUMVZEQ0paT0JLVzFGOE5JNEJYVzNEWDQyUS4u"
+  location.href =
+    "https://forms.office.com/Pages/ResponsePage.aspx?id=gcPCyy4vk02R0VBskxas5_uaYzbSud1LmU6-S958qnFUMVZEQ0paT0JLVzFGOE5JNEJYVzNEWDQyUS4u";
 }
 
-const otras_vacantes = document.getElementById('otras-vacantes');
-otras_vacantes.addEventListener('click', vacantes);
+const otras_vacantes = document.getElementById("otras-vacantes");
+otras_vacantes.addEventListener("click", vacantes);
 
-function vacantes()
-{
-  location.href = "https://agenciapublicadeempleo.sena.edu.co/spe-web/spe/cartelera"
+function vacantes() {
+  location.href =
+    "https://agenciapublicadeempleo.sena.edu.co/spe-web/spe/cartelera";
 }
 
 // var correo = document.getElementById('email');
@@ -29,12 +27,8 @@ function vacantes()
 // var error = document.getElementById('error');
 // error.style.color = 'red';
 
-
-
 // function enviarFormulario(){
 //   console.log("enviando formulario");
-
-  
 
 //   var mensajesError = [];
 
@@ -49,7 +43,7 @@ function vacantes()
 
 //     parrafo.addEventListener('click', tuLink);
 //       function makeCounter(n) {
-//         let count = n; 
+//         let count = n;
 
 //         return {
 //           increase: function() {
@@ -69,15 +63,12 @@ function vacantes()
 //         ancla.textContent = link;
 //         ancla.href = link;
 //       }
-    
 
-   
 //   }
 
 //   if(correo.value === null || correo.value ===''){
 //     mensajesError.push('Ingresa tu correo');
 //   }
-
 
 //   if(password.value === null || password.value ===''){
 //     mensajesError.push('Ingresa tu contraseña');
@@ -94,8 +85,6 @@ var audio3 = document.getElementById("audio3-accesible");
 var audio4 = document.getElementById("audio-emprendimiento");
 var audio5 = document.getElementById("audio5-accesible");
 
-
-
 var teclas = {
   ESC: 27,
   C: 67,
@@ -104,67 +93,63 @@ var teclas = {
   BORRAR: 8,
   E: 69,
   O: 79,
-  F: 70
+  F: 70,
 };
 
 document.addEventListener("keyup", reproducirAudio);
-function reproducirAudio(evento) 
-{
-  
-  if(evento.keyCode == teclas.SPACE)
-  {
+function reproducirAudio(evento) {
+  if (evento.keyCode == teclas.SPACE) {
     audio1.play();
     audio2.pause();
     audio3.pause();
     audio4.pause();
     audio5.pause();
   }
-  if(evento.keyCode == teclas.BORRAR)
-  {
+  if (evento.keyCode == teclas.BORRAR) {
     audio1.pause();
     audio2.play();
     audio3.pause();
     audio4.pause();
     audio5.pause();
   }
-  if(evento.keyCode == teclas.ESC)
-  {
+  if (evento.keyCode == teclas.ESC) {
     audio1.pause();
     audio2.pause();
     audio3.play();
     audio4.pause();
     audio5.pause();
   }
-  if(evento.keyCode == teclas.E)
-  {
+  if (evento.keyCode == teclas.E) {
     audio1.pause();
     audio2.pause();
     audio3.pause();
     audio4.play();
     audio5.pause();
   }
-  if(evento.keyCode == teclas.O)
-  {
+  if (evento.keyCode == teclas.O) {
     audio1.pause();
     audio2.pause();
     audio3.pause();
     audio4.pause();
     audio5.play();
   }
-  
-  if(evento.keyCode == teclas.CTRL)
-  {
+
+  if (evento.keyCode == teclas.CTRL) {
     audio1.pause();
     audio2.pause();
     audio3.pause();
     audio4.pause();
     audio5.pause();
   }
- 
-  if(evento.keyCode == teclas.C)
-  {
+
+  if (evento.keyCode == teclas.C) {
     enlace();
   }
 }
 
+const turno1 = document.getElementById("turno-1");
+turno1.addEventListener("click", desaparece);
 
+function desaparece() {
+  turno1.textContent = "Vacío";
+}
