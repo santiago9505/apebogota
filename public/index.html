@@ -34,16 +34,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#intermediación laboral">Intermediación laboral</a>
+              <a data-toggle="tooltip" title="<img src='https://www.insor.gov.co/home/wp-content/uploads/2018/11/contratacion.gif' />" class="nav-link" href="#intermediación laboral">Intermediación laboral</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#formación">Formación</a>
+              <a data-toggle="tooltip" title="<img src='https://www.insor.gov.co/home/wp-content/uploads/2018/11/planeacion.gif' />" class="nav-link" href="#intermediación laboral" class="nav-link" href="#formación">Formación</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#emprendimiento">Emprendimiento</a>
+              <a data-toggle="tooltip" title="<img src='https://www.insor.gov.co/home/wp-content/uploads/2018/11/contratacion.gif' />" class="nav-link" href="#intermediación laboral" class="nav-link" href="#emprendimiento">Emprendimiento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#orientación">Orientación Ocupacional</a>
+              <a data-toggle="tooltip" title="<img src='https://www.insor.gov.co/home/wp-content/uploads/2018/11/contratacion.gif' />" class="nav-link" href="#intermediación laboral" class="nav-link" href="#orientación">Orientación Ocupacional</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -61,6 +61,7 @@
             
           </ul>
         </div>
+       
       </div>
     </nav> 
     <!-- header -->
@@ -87,7 +88,7 @@
                     La Agencia Pública de Empleo - SENA, presta un servicio de intermediación laboral, para toda la población de manera gratuita, pública e indiscriminada.
                   </p>
                   <p><a href="#contactanos" class="btn btn-outline-light">Contáctanos</a></p>
-                
+                  
                 </div>
               </div>
             </div>
@@ -204,13 +205,29 @@
     <!-- /Intermediación laboral -->
 
     <!-- Atención a PcD -->
+     <!-- <div class="container">
+            <div class="row" id="panelPrecios">
+              <div class="items">
+                <ul>
+                  <li>
+                <a data-toggle="tooltip" title="<img src='https://i.pinimg.com/originals/89/20/01/8920011f27755e9bcae421a284b64ddb.gif' />">
+                  Hola Mundo!
+                </a></li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
     <section id="intermediación laboral" class="mt-4 mb-4">
       <div class="container">
-        <div class="row">
+        <div class="row" id="another">
           <div class="col text-center text-uppercase">
             <small>Personas con Discapacidad</small>
-            <h2>Intermediación Laboral</h2>
-            <audio alt="audio"  id="audio2-accesible" controls>
+            <div>
+              <div>
+                <a data-toggle="tooltip" title="<img src='https://www.insor.gov.co/home/wp-content/uploads/2018/11/contratacion.gif' />" class="nav-link" href="#intermediación laboral"><h2>Intermediación Laboral</h2></a>
+              </div>
+            </div>
+             <audio alt="audio"  id="audio2-accesible" controls>
               <source src="audio/audio.mp3" type="audio/mp3">
             </audio> 
           </div>
@@ -645,30 +662,31 @@
           <button id="boton-contactanos" type="button" class="btn btn-primary btn-lg btn-block">Diligencia tus datos</button>
         </div>
       </div>
-      <table class="table table-dark">
-        <thead>
-          <th scope="row">1</th>
-            <td colspan="2" class="table-active">Orientador 1</td>
-            <td>@twitter</td>
-        </thead>
-        <tbody>
-          <tr class="table-active">
-            <th scope="row">2</th>
-            <td colspan="2" class="table-active">Orientador 2</td>
-            <td id="turno-1"><a href="https://meet.google.com/gqa-raan-mhy">https://meet.google.com/gqa-raan-mhy</a> </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2" class="table-active">Orientador 3</td>
-            <td>@twitter</td>
-          </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td colspan="2" class="table-active">Orientador 4</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <div>
+        <h1>Turnos</h1>
+        <table class="table table-dark" >
+          <thead>
+              <td colspan="2" class="table-active" id="numeroOrientador">Orientador 1</td>
+              <td id="link-1"><a href=""></a></td>
+          </thead>
+          <tbody>
+            <tr class="table-active">
+              <td colspan="2" class="table-active">Orientador 2</td>
+              <td id="turno-1"><a href="https://meet.google.com/gqa-raan-mhy">https://meet.google.com/gqa-raan-mhy</a> </td>
+            </tr>
+            <tr>
+              <td colspan="2" class="table-active">Orientador 3</td>
+              <td>@twitter</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="table-active">Orientador 4</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      
     </section>
       <!-- <footer id="footer" class="pb-4 pt-4">
         <div class="container">
@@ -749,11 +767,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="index.js">
+    
 
     </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -765,7 +783,7 @@
   var firebaseConfig = {
     apiKey: "AIzaSyCX5xoN628uhDrOvZQKCuonpWadQY42U1k",
     authDomain: "apebogota.com",
-    databaseURL: "https://apebogota.com",
+    databaseURL: "https://ape-bogota.firebaseio.com",
     projectId: "ape-bogota",
     storageBucket: "ape-bogota.appspot.com",
     messagingSenderId: "594802791415",
@@ -775,6 +793,10 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
+
+  //Requiriendo datos de firebase
+  
 </script>
+<script src="index.js"></script>
   </body>
 </html>

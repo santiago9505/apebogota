@@ -1,5 +1,32 @@
+var app = document.getElementById("numeroOrientador");
+var link1 = document.getElementById("link-1");
+
+var database = firebase.database();
+
+var orientadorRef = database.ref("orientador");
+var link1Ref = database.ref("link");
+
+orientadorRef.once("value").then(function (snap) {
+  app.innerText = snap.val();
+});
+link1Ref.once("value").then(function (snap) {
+  link1.innerText = snap.val();
+});
+
+//Tooltips
 $(function () {
   $('[data-toggle="tooltip"]').tooltip();
+});
+
+$('#navbarNavDropdown [data-toggle="tooltip"]').tooltip({
+  animated: "fade",
+  placement: "bottom",
+  html: true,
+});
+$('#another [data-toggle="tooltip"]').tooltip({
+  animated: "fade",
+  placement: "bottom",
+  html: true,
 });
 
 $(function () {
