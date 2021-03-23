@@ -1,16 +1,66 @@
-var app = document.getElementById("numeroOrientador");
-var link1 = document.getElementById("link-1");
+var turno1 = document.getElementById("link-1");
+var turno2 = document.getElementById("link-2");
+var turno3 = document.getElementById("link-3");
+var turno4 = document.getElementById("link-4");
+var turno5 = document.getElementById("link-5");
+var turno6 = document.getElementById("link-6");
+var turno7 = document.getElementById("link-7");
+var turno8 = document.getElementById("link-8");
+var turno9 = document.getElementById("link-9");
+var turno10 = document.getElementById("link-10");
 
 var database = firebase.database();
 
-var orientadorRef = database.ref("orientador");
-var link1Ref = database.ref("link");
+var turno1Ref = database.ref("link");
+var turno2Ref = database.ref("link2");
+var turno3Ref = database.ref("link3");
+var turno4Ref = database.ref("link4");
+var turno5Ref = database.ref("link5");
+var turno6Ref = database.ref("link6");
+var turno7Ref = database.ref("link7");
+var turno8Ref = database.ref("link8");
+var turno9Ref = database.ref("link9");
+var turno10Ref = database.ref("link_10");
 
-orientadorRef.once("value").then(function (snap) {
-  app.innerText = snap.val();
+turno1Ref.once("value").then(function (snap) {
+  turno1.innerText = snap.val();
+  turno1.href = snap.val();
 });
-link1Ref.once("value").then(function (snap) {
-  link1.innerText = snap.val();
+turno2Ref.once("value").then(function (snap) {
+  turno2.innerText = snap.val();
+  turno2.href = snap.val();
+});
+turno3Ref.once("value").then(function (snap) {
+  turno3.innerText = snap.val();
+  turno3.href = snap.val();
+});
+turno4Ref.once("value").then(function (snap) {
+  turno4.innerText = snap.val();
+  turno4.href = snap.val();
+});
+turno5Ref.once("value").then(function (snap) {
+  turno5.innerText = snap.val();
+  turno5.href = snap.val();
+});
+turno6Ref.once("value").then(function (snap) {
+  turno6.innerText = snap.val();
+  turno6.href = snap.val();
+});
+turno7Ref.once("value").then(function (snap) {
+  turno7.innerText = snap.val();
+  turno7.href = snap.val();
+});
+turno8Ref.once("value").then(function (snap) {
+  turno8.innerText = snap.val();
+  turno8.href = snap.val();
+});
+turno9Ref.once("value").then(function (snap) {
+  turno9.innerText = snap.val();
+  turno9.href = snap.val();
+});
+turno10Ref.once("value").then(function (snap) {
+  turno10.innerText = snap.val();
+  turno10.href = snap.val();
 });
 
 //Tooltips
@@ -172,11 +222,4 @@ function reproducirAudio(evento) {
   if (evento.keyCode == teclas.C) {
     enlace();
   }
-}
-
-const turno1 = document.getElementById("turno-1");
-turno1.addEventListener("click", desaparece);
-
-function desaparece() {
-  turno1.textContent = "Vacío";
 }
