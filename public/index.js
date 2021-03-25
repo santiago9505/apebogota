@@ -10,6 +10,7 @@ var turno9 = document.getElementById("link-9");
 var turno10 = document.getElementById("link-10");
 
 var database = firebase.database();
+// var linkRef = db.collection("link").doc("ape-bogota");
 
 var turno1Ref = database.ref("link");
 var turno2Ref = database.ref("link2");
@@ -26,6 +27,12 @@ turno1Ref.once("value").then(function (snap) {
   turno1.innerText = snap.val();
   turno1.href = snap.val();
 });
+
+// turno1.addEventListener("click", removeTurno);
+// var removeTurno = database.update({
+//   linkRef: firebase.firestore.FieldValue.delete(),
+// });
+
 turno2Ref.once("value").then(function (snap) {
   turno2.innerText = snap.val();
   turno2.href = snap.val();
@@ -62,6 +69,11 @@ turno10Ref.once("value").then(function (snap) {
   turno10.innerText = snap.val();
   turno10.href = snap.val();
 });
+
+function enlace() {
+  location.href =
+    "https://forms.office.com/Pages/ResponsePage.aspx?id=gcPCyy4vk02R0VBskxas5_uaYzbSud1LmU6-S958qnFUMVZEQ0paT0JLVzFGOE5JNEJYVzNEWDQyUS4u";
+}
 
 //Tooltips
 $(function () {
