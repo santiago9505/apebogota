@@ -1,13 +1,13 @@
-var turno1 = document.getElementById("link-1");
-var turno2 = document.getElementById("link-2");
-var turno3 = document.getElementById("link-3");
-var turno4 = document.getElementById("link-4");
-var turno5 = document.getElementById("link-5");
-var turno6 = document.getElementById("link-6");
-var turno7 = document.getElementById("link-7");
-var turno8 = document.getElementById("link-8");
-var turno9 = document.getElementById("link-9");
-var turno10 = document.getElementById("link-10");
+const turno1 = document.getElementById("link-1");
+const turno2 = document.getElementById("link-2");
+const turno3 = document.getElementById("link-3");
+const turno4 = document.getElementById("link-4");
+const turno5 = document.getElementById("link-5");
+const turno6 = document.getElementById("link-6");
+const turno7 = document.getElementById("link-7");
+const turno8 = document.getElementById("link-8");
+const turno9 = document.getElementById("link-9");
+const turno10 = document.getElementById("link-10");
 
 var database = firebase.database();
 // var linkRef = db.collection("link").doc("ape-bogota");
