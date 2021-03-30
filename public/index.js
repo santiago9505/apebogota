@@ -53,7 +53,7 @@ turno1.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno1.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("1").update(newData);
 });
@@ -67,7 +67,7 @@ turno2.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno2.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("2").update(newData);
 });
@@ -81,7 +81,7 @@ turno3.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno3.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("3").update(newData);
 });
@@ -95,7 +95,7 @@ turno4.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno4.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("4").update(newData);
 });
@@ -109,7 +109,7 @@ turno5.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno5.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("5").update(newData);
 });
@@ -123,7 +123,7 @@ turno6.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno6.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("6").update(newData);
 });
@@ -137,7 +137,7 @@ turno7.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno7.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("7").update(newData);
 });
@@ -151,7 +151,7 @@ turno8.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno8.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("8").update(newData);
 });
@@ -165,7 +165,7 @@ turno9.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno9.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("9").update(newData);
 });
@@ -179,7 +179,7 @@ turno10.addEventListener("click", (e) => {
   e.preventDefault();
   window.location.href = turno10.href;
   const newData = {
-    link: "",
+    link: "En este momento no se encuentra disponible",
   };
   rootRef.child("10").update(newData);
 });
