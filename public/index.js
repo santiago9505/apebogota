@@ -9,65 +9,179 @@ const turno8 = document.getElementById("link-8");
 const turno9 = document.getElementById("link-9");
 const turno10 = document.getElementById("link-10");
 
-var database = firebase.database();
-// var linkRef = db.collection("link").doc("ape-bogota");
+const database = firebase.database();
+const rootRef = database.ref("turnos");
+const turno1Ref = database.ref("turnos/1/link");
+const turno2Ref = database.ref("turnos/2/link");
+const turno3Ref = database.ref("turnos/3/link");
+const turno4Ref = database.ref("turnos/4/link");
+const turno5Ref = database.ref("turnos/5/link");
+const turno6Ref = database.ref("turnos/6/link");
+const turno7Ref = database.ref("turnos/7/link");
+const turno8Ref = database.ref("turnos/8/link");
+const turno9Ref = database.ref("turnos/9/link");
+const turno10Ref = database.ref("turnos/10/link");
 
-var turno1Ref = database.ref("link");
-var turno2Ref = database.ref("link2");
-var turno3Ref = database.ref("link3");
-var turno4Ref = database.ref("link4");
-var turno5Ref = database.ref("link5");
-var turno6Ref = database.ref("link6");
-var turno7Ref = database.ref("link7");
-var turno8Ref = database.ref("link8");
-var turno9Ref = database.ref("link9");
-var turno10Ref = database.ref("link_10");
+//Prueba
+// const turnoId = document.getElementById("turnoId");
+// const link = document.getElementById("link");
+// const addBtn = document.getElementById("addBtn");
+// const updateBtn = document.getElementById("updateBtn");
+// const removeBtn = document.getElementById("removeBtn");
 
-turno1Ref.once("value").then(function (snap) {
-  turno1.innerText = snap.val();
+// addBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   rootRef.child(turnoId.value).set({
+//     link: link.value,
+//   });
+// });
+
+// updateBtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   const newData = {
+//     link: link.value,
+//   };
+//   rootRef.child(turnoId.value).update(newData);
+// });
+
+turno1Ref.on("value", (snap) => {
+  turno1.innerHTML = snap.val();
   turno1.href = snap.val();
 });
 
-// turno1.addEventListener("click", removeTurno);
-// var removeTurno = database.update({
-//   linkRef: firebase.firestore.FieldValue.delete(),
-// });
+turno1.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno1.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("1").update(newData);
+});
 
-turno2Ref.once("value").then(function (snap) {
-  turno2.innerText = snap.val();
+turno2Ref.on("value", (snap) => {
+  turno2.innerHTML = snap.val();
   turno2.href = snap.val();
 });
-turno3Ref.once("value").then(function (snap) {
-  turno3.innerText = snap.val();
+
+turno2.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno2.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("2").update(newData);
+});
+
+turno3Ref.on("value", (snap) => {
+  turno3.innerHTML = snap.val();
   turno3.href = snap.val();
 });
-turno4Ref.once("value").then(function (snap) {
-  turno4.innerText = snap.val();
+
+turno3.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno3.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("3").update(newData);
+});
+
+turno4Ref.on("value", (snap) => {
+  turno4.innerHTML = snap.val();
   turno4.href = snap.val();
 });
-turno5Ref.once("value").then(function (snap) {
-  turno5.innerText = snap.val();
+
+turno4.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno4.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("4").update(newData);
+});
+
+turno5Ref.on("value", (snap) => {
+  turno5.innerHTML = snap.val();
   turno5.href = snap.val();
 });
-turno6Ref.once("value").then(function (snap) {
-  turno6.innerText = snap.val();
+
+turno5.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno5.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("5").update(newData);
+});
+
+turno6Ref.on("value", (snap) => {
+  turno6.innerHTML = snap.val();
   turno6.href = snap.val();
 });
-turno7Ref.once("value").then(function (snap) {
-  turno7.innerText = snap.val();
+
+turno6.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno6.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("6").update(newData);
+});
+
+turno7Ref.on("value", (snap) => {
+  turno7.innerHTML = snap.val();
   turno7.href = snap.val();
 });
-turno8Ref.once("value").then(function (snap) {
-  turno8.innerText = snap.val();
+
+turno7.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno7.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("7").update(newData);
+});
+
+turno8Ref.on("value", (snap) => {
+  turno8.innerHTML = snap.val();
   turno8.href = snap.val();
 });
-turno9Ref.once("value").then(function (snap) {
-  turno9.innerText = snap.val();
+
+turno8.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno8.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("8").update(newData);
+});
+
+turno9Ref.on("value", (snap) => {
+  turno9.innerHTML = snap.val();
   turno9.href = snap.val();
 });
-turno10Ref.once("value").then(function (snap) {
-  turno10.innerText = snap.val();
+
+turno9.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno9.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("9").update(newData);
+});
+
+turno10Ref.on("value", (snap) => {
+  turno10.innerHTML = snap.val();
   turno10.href = snap.val();
+});
+
+turno10.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.location.href = turno10.href;
+  const newData = {
+    link: "",
+  };
+  rootRef.child("10").update(newData);
 });
 
 function enlace() {
@@ -110,63 +224,6 @@ function vacantes() {
   location.href =
     "https://agenciapublicadeempleo.sena.edu.co/spe-web/spe/cartelera";
 }
-
-// var correo = document.getElementById('email');
-// var password = document.getElementById('password');
-// var error = document.getElementById('error');
-// error.style.color = 'red';
-
-// function enviarFormulario(){
-//   console.log("enviando formulario");
-
-//   var mensajesError = [];
-
-//   if(correo.value === "sguaqueta@sena.edu.co" && password.value ==='Sena2020*'){
-//     mensajesError.push('Ingresa tu contraseña');
-
-//     var turnos = [];
-//     const funcionarios = document.getElementById('funcionarios')
-//     const parrafo = document.getElementById('atencion1');
-//     const modulo = parrafo.textContent;
-//     const ancla = document.getElementById('salelink');
-
-//     parrafo.addEventListener('click', tuLink);
-//       function makeCounter(n) {
-//         let count = n;
-
-//         return {
-//           increase: function() {
-//             count = count + n;
-//           },
-//           getCount: function() {
-//             return count;
-//           }
-//         }
-//       }
-//       let counter = makeCounter(0);
-//       counter.increase();
-
-//       function tuLink() {
-//         let link = prompt('link de tu reunión');
-//         parrafo.textContent = "Turno: " + n;
-//         ancla.textContent = link;
-//         ancla.href = link;
-//       }
-
-//   }
-
-//   if(correo.value === null || correo.value ===''){
-//     mensajesError.push('Ingresa tu correo');
-//   }
-
-//   if(password.value === null || password.value ===''){
-//     mensajesError.push('Ingresa tu contraseña');
-//   }
-
-//   error.innerHTML = mensajesError.join(', ');
-
-//   return false;
-// }
 
 var audio1 = document.getElementById("audio1-accesible");
 var audio2 = document.getElementById("audio2-accesible");
