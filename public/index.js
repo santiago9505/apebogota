@@ -1,26 +1,26 @@
 const turno1 = document.getElementById("link-1");
 const turno2 = document.getElementById("link-2");
-const turno3 = document.getElementById("link-3");
-const turno4 = document.getElementById("link-4");
-const turno5 = document.getElementById("link-5");
-const turno6 = document.getElementById("link-6");
-const turno7 = document.getElementById("link-7");
-const turno8 = document.getElementById("link-8");
-const turno9 = document.getElementById("link-9");
-const turno10 = document.getElementById("link-10");
+// const turno3 = document.getElementById("link-3");
+// const turno4 = document.getElementById("link-4");
+// const turno5 = document.getElementById("link-5");
+// const turno6 = document.getElementById("link-6");
+// const turno7 = document.getElementById("link-7");
+// const turno8 = document.getElementById("link-8");
+// const turno9 = document.getElementById("link-9");
+// const turno10 = document.getElementById("link-10");
 
 const database = firebase.database();
 const rootRef = database.ref("turnos");
 const turno1Ref = database.ref("turnos/1/link");
 const turno2Ref = database.ref("turnos/2/link");
-const turno3Ref = database.ref("turnos/3/link");
-const turno4Ref = database.ref("turnos/4/link");
-const turno5Ref = database.ref("turnos/5/link");
-const turno6Ref = database.ref("turnos/6/link");
-const turno7Ref = database.ref("turnos/7/link");
-const turno8Ref = database.ref("turnos/8/link");
-const turno9Ref = database.ref("turnos/9/link");
-const turno10Ref = database.ref("turnos/10/link");
+// const turno3Ref = database.ref("turnos/3/link");
+// const turno4Ref = database.ref("turnos/4/link");
+// const turno5Ref = database.ref("turnos/5/link");
+// const turno6Ref = database.ref("turnos/6/link");
+// const turno7Ref = database.ref("turnos/7/link");
+// const turno8Ref = database.ref("turnos/8/link");
+// const turno9Ref = database.ref("turnos/9/link");
+// const turno10Ref = database.ref("turnos/10/link");
 
 //Prueba
 // const turnoId = document.getElementById("turnoId");
@@ -72,117 +72,117 @@ turno2.addEventListener("click", (e) => {
   rootRef.child("2").update(newData);
 });
 
-turno3Ref.on("value", (snap) => {
-  turno3.innerHTML = snap.val();
-  turno3.href = snap.val();
-});
+// turno3Ref.on("value", (snap) => {
+//   turno3.innerHTML = snap.val();
+//   turno3.href = snap.val();
+// });
 
-turno3.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno3.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("3").update(newData);
-});
+// turno3.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno3.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("3").update(newData);
+// });
 
-turno4Ref.on("value", (snap) => {
-  turno4.innerHTML = snap.val();
-  turno4.href = snap.val();
-});
+// turno4Ref.on("value", (snap) => {
+//   turno4.innerHTML = snap.val();
+//   turno4.href = snap.val();
+// });
 
-turno4.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno4.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("4").update(newData);
-});
+// turno4.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno4.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("4").update(newData);
+// });
 
-turno5Ref.on("value", (snap) => {
-  turno5.innerHTML = snap.val();
-  turno5.href = snap.val();
-});
+// turno5Ref.on("value", (snap) => {
+//   turno5.innerHTML = snap.val();
+//   turno5.href = snap.val();
+// });
 
-turno5.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno5.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("5").update(newData);
-});
+// turno5.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno5.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("5").update(newData);
+// });
 
-turno6Ref.on("value", (snap) => {
-  turno6.innerHTML = snap.val();
-  turno6.href = snap.val();
-});
+// turno6Ref.on("value", (snap) => {
+//   turno6.innerHTML = snap.val();
+//   turno6.href = snap.val();
+// });
 
-turno6.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno6.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("6").update(newData);
-});
+// turno6.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno6.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("6").update(newData);
+// });
 
-turno7Ref.on("value", (snap) => {
-  turno7.innerHTML = snap.val();
-  turno7.href = snap.val();
-});
+// turno7Ref.on("value", (snap) => {
+//   turno7.innerHTML = snap.val();
+//   turno7.href = snap.val();
+// });
 
-turno7.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno7.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("7").update(newData);
-});
+// turno7.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno7.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("7").update(newData);
+// });
 
-turno8Ref.on("value", (snap) => {
-  turno8.innerHTML = snap.val();
-  turno8.href = snap.val();
-});
+// turno8Ref.on("value", (snap) => {
+//   turno8.innerHTML = snap.val();
+//   turno8.href = snap.val();
+// });
 
-turno8.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno8.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("8").update(newData);
-});
+// turno8.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno8.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("8").update(newData);
+// });
 
-turno9Ref.on("value", (snap) => {
-  turno9.innerHTML = snap.val();
-  turno9.href = snap.val();
-});
+// turno9Ref.on("value", (snap) => {
+//   turno9.innerHTML = snap.val();
+//   turno9.href = snap.val();
+// });
 
-turno9.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno9.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("9").update(newData);
-});
+// turno9.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno9.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("9").update(newData);
+// });
 
-turno10Ref.on("value", (snap) => {
-  turno10.innerHTML = snap.val();
-  turno10.href = snap.val();
-});
+// turno10Ref.on("value", (snap) => {
+//   turno10.innerHTML = snap.val();
+//   turno10.href = snap.val();
+// });
 
-turno10.addEventListener("click", (e) => {
-  e.preventDefault();
-  window.location.href = turno10.href;
-  const newData = {
-    link: "En este momento no se encuentra disponible",
-  };
-  rootRef.child("10").update(newData);
-});
+// turno10.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   window.location.href = turno10.href;
+//   const newData = {
+//     link: "En este momento no se encuentra disponible",
+//   };
+//   rootRef.child("10").update(newData);
+// });
 
 function enlace() {
   location.href =
